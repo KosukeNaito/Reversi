@@ -1,0 +1,18 @@
+@startuml
+Interface IBoardGame
+Interface IBoard
+Interface IPuttable
+Interface ILocation
+Interface IPlayer
+Class BlackStone 
+Class WhiteStone
+Class Othello
+Class OthelloBoard
+Class BoardHeight
+Class BoardWidth
+Othello ...|> IBoardGame
+OthelloBoard ...|> IBoard
+BlackStone ...|> IPuttable
+WhiteStone ...|> IPuttable
+
+@enduml
